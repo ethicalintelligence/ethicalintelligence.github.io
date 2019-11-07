@@ -7,6 +7,15 @@ img {
   border: 1px solid #ccc;
 }
 
+body.index .hero-body {
+  min-height: 100vh;
+  margin-top: -48px;
+  background: url(/theme/images/home-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 400px;
+}
+
 .navbar {
   box-shadow: 0 4px 6px 0px rgba(0,0,0,.2);
   margin-bottom: 20px;
@@ -19,15 +28,18 @@ img {
   border: 0px none;
 }
 
-.logo-block-wrapper {
-  display: flex;
-  flex-direction: column;
-}
 .logo-block {
   display: flex;
   flex-direction: row;
 }
+.logo-block div {
+  display: flex;
+  flex-direction: column;
+}
 
+.logo-block .image {
+  margin-right: 20px;
+}
 .logo-block .text {
   display: flex;
   flex-direction: column;
@@ -36,7 +48,7 @@ img {
 }
 
 .logo-block img, .logo-block .contact-button {
-  height: 240px;
+  height: 200px;
   padding: 0;
   margin-top: 20px;
   margin-right: 15px;
@@ -44,21 +56,26 @@ img {
 }
 
 .logo-block h1 {
-  font-size: 125px;
+  font-size: 50px;
   font-weight: bold;
   color: #000;
-  font-family: 'Oswald',sans-serif;
+  font-family: 'oswald-medium','Oswald',sans-serif;
   text-transform: uppercase;
   line-height: 1.1em;
   word-wrap: break-word;
   overflow: hidden;
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
 
-.logo-block-wrapper h2 {  
+.logo-block h2 {  
   letter-spacing: 0.2em;
-  text-align: left;
+  text-align: left !important;
   text-transform: lowercase;
-  font: normal normal normal 40px/1.4em 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 26px;
+  line-height: 1.4em;
+  
 }
 
 
@@ -67,7 +84,7 @@ img {
 }
 
 .hero .tabs ul li a {
-  font: normal normal normal 18px/1.4em oswald-medium,oswald,sans-serif;
+  font: normal normal normal 15px/1.4em oswald-medium,oswald,sans-serif;
   border-bottom: 0 none;
   font-weight: 600;
   color: black;
@@ -125,11 +142,53 @@ img {
   margin-bottom: 15px;
 }
 
+.heading-block.dividing {
+  margin: 50px 0px;
+}
+
 .heading-block .ei-section-header h1 {
   font-size: 55px;
 }
 
+.divider {
+  border-bottom: 2px solid rgba(97, 13, 123, 1);;
+  width: 100px;
+  margin: 100px auto;
+}
 
+.container.feature.alt {
+  padding: 0px !important;
+  text-align: center;
+  white-space: nowrap;
+  margin: 60px auto;
+  width: 700px;
+}
+
+.container.feature.alt h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Oswald',sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.container.feature.alt h2 {
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px !important;
+  line-height: 1.2em;
+}
+
+.container.feature.alt a.feature-button {
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+}
 
 p.featured {
   font: normal normal normal 15px/1.4em 'Nunito',sans-serif
@@ -152,30 +211,29 @@ a.feature-button:hover {
   color: #fff;
 }
 
+ul.normal {
+  margin: 20px;
+  list-style: disc;
+}
+
+/* Add some padding to anchores we link to directly so they have some breathing room */
+
+.feature.link {
+  padding-top: 100px;
+}
 
 /* Specific Pages ********************************************/
 
 /* About */
 .feature.about_us {
   position: relative;  
-  padding-left: 386px;
-  
   margin: 40px auto;
+  text-align: center;
 }
 
-.feature.about_us::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 386px;
-  height: 386px;
-  left: -20px;
-  background-image: url(../images/about.webp);
-  background-repeat: no-repeat;
-  background-size: 386px;
-}
 
 .feature.about_us h1 {
+  text-align: center;
   font-size: 55px;
   font-weight: bold;
   color: #000;
@@ -225,7 +283,7 @@ a.feature-button:hover {
 /* Expdrt */
 .feature.expert {
   position: relative;  
-  padding-right: 386px;
+  padding-right: 306px;
   margin: 40px auto;
 }
 
@@ -233,12 +291,13 @@ a.feature-button:hover {
   content: '';
   position: absolute;
   display: block;
-  width: 386px;
-  height: 386px;
-  right: 20px;
+  width: 306px;
+  height: 306px;
+  right: -20px;
+  top: 90px;
   background-image: url(../images/about.webp);
   background-repeat: no-repeat;
-  background-size: 386px;
+  background-size: 306px;
 }
 
 .feature.expert h1 {
@@ -249,6 +308,12 @@ a.feature-button:hover {
   text-transform: uppercase;
   line-height: 1.1em;
   margin-bottom: 15px;
+  text-align: right;
+}
+
+.feature.expert p {
+  text-align: right;
+  font-size: 18px;
 }
 
 .experts.columns {
@@ -293,10 +358,11 @@ a.feature-button:hover {
 
 /* Services */
 
+
 .services-header {
   text-align: center;
   font-size: 46px;
-  font-weight: normal;
+  font-weight: bold;
   color: #000;
   font-family: 'oswald-extralight',oswald,sans-serif;
   text-transform: uppercase;
@@ -336,23 +402,55 @@ a.feature-button:hover {
 
 .columns.services {
   margin-bottom: 50px;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .column.service {
-  border: 2px solid #000;
+  background-image: url(../images/home_nodes_1.png);
+  background-repeat: no-repeat;
+  background-size: 100px !important;
+  padding: 3em;
+  padding-top: 130px;
+  background-position: center 20px;
+
+  border: 3px solid #000;
   margin: 30px;
+  
+  box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+  max-width: 320px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.column.service.alt {
+  background-image: url(../images/home_nodes_3.png);
+}
+
+.column.service.alt2 {
+  background-image: url(../images/home_nodes_3.png);
 }
 
 .column.service h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: bold;
   color: #000;
   font-family: 'oswald-extralight',oswald,sans-serif;
   text-transform: uppercase;
   line-height: 1.1em;
-  white-space: nowrap;
   margin-bottom: 20px;
+}
+
+.column.service p {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.column.service a {
+  margin-top: auto;
 }
 
 
@@ -573,6 +671,11 @@ a.feature-button:hover {
   margin-right: 15px;
 }
 
+.footer-block .subscribe-form .fields input:focus,.footer-block .subscribe-form input.submit:hover {
+  background: #221333 !important;
+  color: #fff !important;
+  border: 2px solid #221333 !important;
+}
 .footer-block .subscribe-form .fields input.text {
   border: 2px solid #fff;
   padding: 15px;
@@ -585,12 +688,11 @@ a.feature-button:hover {
   display: block;
 }
 
-.footer-block .subscribe-form  input.submit {
+.footer-block .subscribe-form input.submit {
   border: 2px solid #fff;
   background:rgba(97, 13, 123, 1) !important;
   color: #fff;
   font-size: 16px;
-
   height: 130px;
   display: block;
   padding: 15px;
@@ -601,6 +703,11 @@ a.feature-button:hover {
 
   body {
     margin-top: 0px;
+  }
+
+  body.index .hero-body {
+    background: transparent;
+    margin-top: 0;
   }
   
   .tabs {
@@ -631,6 +738,10 @@ a.feature-button:hover {
     width: auto;
   }
 
+  .logo-block .image {
+    margin: 0px auto;
+  }
+  
   .logo-block img {
     width: 200px;
   }
@@ -639,11 +750,22 @@ a.feature-button:hover {
     font: normal normal normal 50px/1.4em oswald-medium,oswald,sans-serif;
   }
 
-  .logo-block-wrapper h2 {
+  .logo-block h2 {
     letter-spacing: 0.1em;
-    text-align: center;
+    text-align: center !important;
     text-transform: lowercase;
     font: normal normal normal 15px/1.4em 'Nunito', sans-serif;
+  }
+
+  .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container.feature.alt {
+    width: auto !important;
+    margin: 2em;
+    white-space: normal !important;
   }
 
   .contact-wrapper {
@@ -691,23 +813,40 @@ a.feature-button:hover {
     margin-bottom: 20px;
   }
 
-  .services-header {
-    padding: 0px !important;
-    width: auto !important;
+  
+  .services-header {  
+    width: auto;
+    margin: 30px 0px;
+    padding: 0px;
   }
 
-  .services-header::before,.services-header::after {
+  .services-header::before, .services-header::after {  
     content: none;
   }
 
+  .feature.link {
+    padding-top: 20px;
+  }
+
+  .pages_services .feature {
+    padding: 2em;
+  }
   .columns.services {
+
     padding: 1em;
   }
   
   .column.service {
     border: 0 none !important;
     margin: 20px 0 !important;
-    padding: 1em !important;
+    
+  }
+
+  .column.case-studies {
+    border: 0 none !important;
+    padding: 20px !important;
+    text-align: center;
+    
   }
 
   .case-study-wrapper {
