@@ -16,6 +16,18 @@ body.index .hero-body {
   background-size: 400px;
 }
 
+html body .container.video {
+  width: 640px;
+  height: 480px;
+  margin: 0px auto !important;
+}
+
+.container.video iframe {
+  width: 640px;
+  height: 480px;
+  
+}
+
 .navbar {
   box-shadow: 0 4px 6px 0px rgba(0,0,0,.2);
   margin-bottom: 20px;
@@ -164,7 +176,7 @@ body.index .hero-body {
   text-align: center;
   white-space: nowrap;
   margin: 60px auto;
-  width: 700px;
+  
 }
 
 .container.feature.alt h1 {
@@ -234,6 +246,14 @@ ul.normal {
   text-align: center;
 }
 
+#nodes-divider {
+  width: 628px;
+  height: 298px;
+  display: block;
+  margin: 80px auto 120px auto;
+  border: 0 none;
+}
+
 
 .feature.about_us h1 {
   text-align: center;
@@ -246,6 +266,14 @@ ul.normal {
   margin-bottom: 15px;
 }
 
+.columns.team {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.columns.team .column {
+  padding: 3em;
+}
 .person img {
   width: 110px;
   height: 110px;
@@ -270,6 +298,11 @@ ul.normal {
   text-transform: uppercase;
   line-height: 1.1em;
   white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.person p {
+  font-size: 14px;
 }
 
 .post-index .main-heading {
@@ -287,7 +320,7 @@ ul.normal {
 .feature.expert {
   position: relative;  
   padding-right: 306px;
-  margin: 40px auto;
+  margin: 40px auto 120px auto;
 }
 
 .feature.expert::before {
@@ -297,7 +330,7 @@ ul.normal {
   width: 306px;
   height: 306px;
   right: -20px;
-  top: 90px;
+  top: 0px;
   background-image: url(../images/about.webp);
   background-repeat: no-repeat;
   background-size: 306px;
@@ -324,8 +357,40 @@ ul.normal {
 }
 .experts .expert {
   border: 2px solid #000;
-  width: 200px;
+  min-height: 200px;
   margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;  
+  position: relative;
+}
+
+.experts .expert:before {
+  content: ' ';
+  display: block !important;
+  position: absolute;
+  width: 100% !important;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #fff;
+  transition: background-color 0.4s ease 0s;
+  display: block;
+  width: auto;
+  z-index: 1;
+}
+
+.experts .expert:hover:before {
+  background: transparent;
+}
+
+.experts .expert:hover h2, .experts .expert:hover h3 {
+  color: #fff;
 }
 
 .experts .expert h2 {
@@ -336,14 +401,16 @@ ul.normal {
   text-transform: uppercase;
   line-height: 1.1em;
   word-wrap: break-word;
+  margin-bottom: 10px;
+  z-index: 9;
 }
 
 .experts .expert h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   color: #000;
-  font-family: 'oswald-extralight',oswald,sans-serif;
-  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  z-index: 9;
   line-height: 1.1em;
   white-space: nowrap;
 }
@@ -478,6 +545,7 @@ ul.normal {
 .column.case-study {
   border: 2px solid #000;
   margin: 30px;
+  padding: 3em;
 }
 
 .column.case-study p {
@@ -497,7 +565,7 @@ ul.normal {
   text-transform: uppercase;
   line-height: 1.1em;
   min-height: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 
@@ -781,16 +849,12 @@ ul.normal {
   }
 
   .ei-section-header::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 60px;
-    left: -60px;
-    top: -10px;
-    background-image: url(../images/anchor.webp);
-    background-repeat: no-repeat;
-    background-size: 50px;
+    content: none;
+    
+  }
+
+  html body .container.video,html body .container.video iframe {
+    width: auto !important;
   }
 
   .feature.about_us {
@@ -817,6 +881,19 @@ ul.normal {
     margin-bottom: 20px;
   }
 
+
+  .feature.expert {
+    padding: 3em;
+    text-align: center;
+  }
+
+  .feature.expert h1, .feature.expert p {
+    text-align: center;
+  }
+
+  .feature.expert:before {
+    content: none;
+  }
   
   .services-header {  
     width: auto;
