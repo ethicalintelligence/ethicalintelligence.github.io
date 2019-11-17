@@ -7122,6 +7122,13 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   .navbar > .container {
     display: block;
   }
+
+  .navbar.is-fixed-bottom, .navbar.is-fixed-top {
+    
+    width: 100vw !important;
+    max-width: 100vw !important;  
+    
+  }
   .navbar-brand .navbar-item,
   .navbar-tabs .navbar-item {
     align-items: center;
