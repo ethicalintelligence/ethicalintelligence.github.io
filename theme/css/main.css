@@ -130,21 +130,21 @@ html body .container.video {
   height: 100px;
   left: -120px;
   top: -20px;
-  background-image: url(../images/anchor.webp);
+  background-image: url(../images/anchor.png);
   background-repeat: no-repeat;
   background-size: 100px;
 }
 
 .ei-section-header.alt::before {
-  background-image: url(../images/anchor2.webp);
+  background-image: url(../images/anchor2.png);
 }
 
 .ei-section-header.alt2::before {
-  background-image: url(../images/anchor3.webp);
+  background-image: url(../images/anchor3.png);
 }
 
 .ei-section-header.alt3::before {
-  background-image: url(../images/anchor4.webp);
+  background-image: url(../images/anchor4.png);
 }
 
 .ei-section-header h1 {
@@ -331,7 +331,7 @@ ul.normal {
   height: 306px;
   right: -20px;
   top: 0px;
-  background-image: url(../images/about.webp);
+  background-image: url(../images/about.png);
   background-repeat: no-repeat;
   background-size: 306px;
 }
