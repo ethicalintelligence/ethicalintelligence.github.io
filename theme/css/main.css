@@ -316,7 +316,7 @@ ul.normal {
   white-space: nowrap;
 }
 
-/* Expdrt */
+/* Expert */
 .feature.expert {
   position: relative;  
   padding-right: 306px;
@@ -424,6 +424,27 @@ ul.normal {
   text-transform: uppercase;
   line-height: 1.1em;
   white-space: nowrap;
+}
+
+.ei-section-header.blog .author {
+  position: relative;
+  top: -30px;
+}
+
+.entry-content h2,.entry-content h2 a {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  font-family: 'oswald-extralight',oswald,sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.entry-content h2 a:hover {
+  color: #3273dc;
 }
 
 /* Services */
@@ -667,6 +688,11 @@ appearance: none;
 /* Post */
 
 .post-body {
+  margin-bottom: 40px;
+}
+
+
+.post-body .entry-content p {
   margin-bottom: 40px;
 }
 
