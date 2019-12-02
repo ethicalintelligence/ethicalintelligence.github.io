@@ -434,7 +434,7 @@ ul.normal {
 .entry-content h2,.entry-content h2 a {
   margin-bottom: 30px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bold;
   color: #000;
   font-family: 'oswald-extralight',oswald,sans-serif;
   text-transform: uppercase;
