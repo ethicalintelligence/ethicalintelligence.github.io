@@ -174,7 +174,7 @@ html body .container.video {
 .container.feature.alt {
   padding: 0px !important;
   text-align: center;
-  white-space: nowrap;
+  xwhite-space: nowrap;
   margin: 60px auto;
   
 }
@@ -213,7 +213,7 @@ a.feature-button, input.feature-button {
   transition: color 0.4s ease 0s;
   font: normal normal normal 14px/1.4em oswald-medium,oswald,sans-serif;
   display: inline-block;
-  white-space: nowrap;
+  xwhite-space: nowrap;
   border: 2px solid #000;
   padding: 8px 35px;
   color: #000;
@@ -297,7 +297,7 @@ ul.normal {
   font-family: 'oswald-extralight',oswald,sans-serif;
   text-transform: uppercase;
   line-height: 1.1em;
-  white-space: nowrap;
+  xwhite-space: nowrap;
   margin-bottom: 20px;
 }
 
@@ -313,7 +313,7 @@ ul.normal {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   line-height: 1.1em;
-  white-space: nowrap;
+  xwhite-space: nowrap;
 }
 
 /* Expert */
@@ -354,11 +354,14 @@ ul.normal {
 
 .experts.columns {
   margin-bottom: 20px;
+  flex-wrap: wrap !important;
+  justify-content: space-between;
 }
 .experts .expert {
   border: 2px solid #000;
   min-height: 200px;
-  margin: 20px;
+  flex: 0 0 30%;
+  margin-bottom: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -368,7 +371,7 @@ ul.normal {
   background-size: cover;
   background-position: center center;  
   position: relative;
-  flex: 1 1 0px;
+  
 }
 
 .experts .expert:before {
@@ -419,7 +422,7 @@ ul.normal {
   font-family: 'Nunito', sans-serif;
   z-index: 9;
   line-height: 1.1em;
-  white-space: nowrap;
+  xwhite-space: nowrap;
   text-shadow: 0px 4px 3px rgba(0,0,0,0),
              0px 8px 13px rgba(0,0,0,0),
              0px 18px 23px rgba(0,0,0,0);
@@ -433,7 +436,7 @@ ul.normal {
   font-family: 'oswald-extralight',oswald,sans-serif;
   text-transform: uppercase;
   line-height: 1.1em;
-  white-space: nowrap;
+  xwhite-space: nowrap;
 }
 
 .ei-section-header.blog .author {
@@ -488,7 +491,7 @@ appearance: none;
   font-family: 'oswald-extralight',oswald,sans-serif;
   text-transform: uppercase;
   line-height: 1.1em;
-  white-space: nowrap;
+  xwhite-space: nowrap;
   position: relative;
   width: 200px;
   margin: 30px auto 60px auto;
@@ -648,6 +651,8 @@ appearance: none;
 
 #post-list {
   list-style: none;
+  padding: 20px;
+  white-space: normal;
 }
 
 .post-index .main-heading {
@@ -698,6 +703,7 @@ appearance: none;
 
 .post-body {
   margin-bottom: 40px;
+  padding: 20px;
 }
 
 
@@ -756,8 +762,8 @@ appearance: none;
 }
 
 .hero-foot .footer-block .columns {
-  width: 800px;
   
+  width: 80%;
   margin: 0px auto;
 }
 .footer-block .contacts {
@@ -805,7 +811,7 @@ appearance: none;
 .footer-block .subscribe-form .fields input.text {
   border: 2px solid #fff;
   padding: 15px;
-  min-width: 300px;
+  min-width: 200px;
   color: #fff;
   font-size: 16px;
   background: transparent;
@@ -1006,6 +1012,33 @@ appearance: none;
     border: 0 none;
     padding: 2em;
   }
+
+
+  .experts.columns {
+    margin-bottom: 20px;
+    flex-wrap: nowrap !important;
+    
+  }
+  .experts .expert {
+    border: 2px solid #000;
+    min-height: 140px;
+    flex: 1 1 90% !important;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+    position: relative;
+    width: 90% !important;
+    
+  }
+
+  
+
   
 }
 
