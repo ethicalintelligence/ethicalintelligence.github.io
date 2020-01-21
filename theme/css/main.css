@@ -450,14 +450,21 @@ ul.normal {
   font-weight: bold;
   color: #000;
   font-family: 'oswald-extralight',oswald,sans-serif;
-  text-transform: uppercase;
+
   line-height: 1.1em;
   text-decoration: none;
+  
+}
+
+.entry-content h2 a {
   text-decoration: underline;
+  color: #094aa8 !important;
+  
 }
 
 .entry-content h2 a:hover {
-  color: #3273dc;
+  color: #42acf7 !important;
+  text-decoration: underline;
 }
 
 /* Services */
