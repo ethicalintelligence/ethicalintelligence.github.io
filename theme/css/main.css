@@ -147,6 +147,14 @@ html body .container.video {
   background-image: url(../images/anchor4.png);
 }
 
+.ei-section-header.blog_index {
+  text-align: center;
+}
+.ei-section-header.blog_index::before {
+  content: none;
+}
+
+
 .ei-section-header h1 {
   font-size: 35px;
   font-weight: bold;
@@ -439,11 +447,18 @@ ul.normal {
   xwhite-space: nowrap;
 }
 
-.ei-section-header.blog .author {
-  position: relative;
-  top: -30px;
+.ei-section-header.blog::before {
+  content: none;
 }
 
+html body a.readmore {
+  padding: 12px 25px;
+  color: #fff;
+  background: #610d7b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
 .entry-content h2,.entry-content h2 a {
   margin-bottom: 30px;
   font-size: 18px;
@@ -453,7 +468,7 @@ ul.normal {
 
   line-height: 1.1em;
   text-decoration: none;
-  
+  text-transform: uppercase;
 }
 
 .entry-content h2 a {
@@ -660,6 +675,8 @@ appearance: none;
   list-style: none;
   padding: 20px;
   white-space: normal;
+  display: flex;
+  flex-flow: wrap;
 }
 
 .post-index .main-heading {
@@ -675,6 +692,10 @@ appearance: none;
 
 #post-list li {
   margin-bottom: 30px;
+  max-width: 50%;
+  flex: 1 0 50%;
+  padding: 15px 25px;
+  
 }
 
 #post-list h2 {
@@ -683,7 +704,7 @@ appearance: none;
   color: #000;
   font-family: 'Nunito',sans-serif;
   line-height: 1.1em;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 #post-list h2 a {
@@ -728,6 +749,29 @@ appearance: none;
   font-family: 'Oswald',sans-serif;
   text-transform: uppercase;
   line-height: 1.1em;
+}
+
+#post-list h2.entry-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Oswald',sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1em;
+}
+
+.post-body h1.blog-item-heading-roundup {
+  text-align: center;
+}
+.post-body h1.blog-item-heading-roundup a {
+  font-size: 38px;
+  
+}
+
+.post-body h1.blog-item-heading-roundup span {
+  display: block;
+  color: #610d7b;
+  
 }
 
 .post-info.full {
@@ -840,6 +884,14 @@ appearance: none;
 
 @media (max-width: 768px) {
 
+  #post-list li {
+    margin-bottom: 30px;
+    max-width: 100%;
+    flex: 1 0 100%;
+    padding: 0px;
+    
+  }
+  
   body {
     margin-top: 0px;
   }
