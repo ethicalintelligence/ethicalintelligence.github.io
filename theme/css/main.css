@@ -882,6 +882,34 @@ appearance: none;
   
 }
 
+.featured_footer {
+  width: 100%;
+  border: 2px solid #000;
+  margin: 30px auto;
+  padding: 35px;
+  text-align: center;
+}
+.featured_footer h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  font-family: 'oswald-medium','Oswald',sans-serif;
+}
+
+
+
+.featured_footer a {
+  display: inline-block;
+margin-top: 20px;
+padding: 12px 25px;
+  color: #fff;
+  background: #610d7b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
 @media (max-width: 768px) {
 
   #post-list li {
