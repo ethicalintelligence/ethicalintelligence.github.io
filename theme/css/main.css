@@ -398,6 +398,7 @@ ul.normal {
 .covid-columns {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-bottom: 40px;
 
 }
 .covid-left h2 {
@@ -441,11 +442,29 @@ margin-bottom: 20px;
   border: 2px solid #000;
   padding: 5px;
   font-size: 15px;
-  font-weight: bo;d;
+  font-weight: bold;
   background: #fff;
   flex: 1;
   height: auto;
-  line-height: 50px;
+  line-height: 30px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+display: block;
+min-width: 300px;
+margin-bottom: 10px;
+}
+
+#covid-subscribe-form textarea {
+  border: 2px solid #000;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #fff;
+  flex: 1;
+  height: auto;
+  
   margin-right: 10px;
   -webkit-appearance: none;
 -moz-appearance: none;
