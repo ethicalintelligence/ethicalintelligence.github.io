@@ -16,6 +16,7 @@ body.index .hero-body {
   background-size: 400px;
 }
 
+
 html body .container.video {
   width: 640px;
   height: 480px;
@@ -69,6 +70,21 @@ html body .container.video {
   margin-right: 15px;
   margin-bottom: 15px;
 }
+
+.logo-block h0 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #000;
+  font-family: 'oswald-medium','Oswald',sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  word-wrap: break-word;
+  overflow: hidden;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+
 
 .logo-block h1 {
   font-size: 50px;
@@ -333,38 +349,42 @@ ul.normal {
 .feature.covid {
   
   position: relative;  
-  padding-right: 306px;
-  margin: 40px auto 120px auto;
+  padding-right: 406px;
+  margin: 40px auto 150px auto;
 }
 
 .feature.covid::before {
   content: '';
   position: absolute;
   display: block;
-  width: 206px;
-  height: 206px;
-  right: -20px;
-  top: 0px;
-  background-image: url(../images/about.png);
+  width: 650px;
+  height: 650px;
+  right: -280px;
+  top: -100px;
+  background-image: url(../images/home-bg.png);
   background-repeat: no-repeat;
-  background-size: 206px;
+  background-size: 650px;
 }
 
 .feature.covid h1 {
-  font-size: 55px;
-  font-weight: bold;
+  font-size: 70px;
+  font-weight: 500;
   color: #000;
   font-family: 'Oswald',sans-serif;
   text-transform: uppercase;
-  line-height: 1.1em;
-  margin-bottom: 15px;
   text-align: right;
+  line-height: 110%;
 }
 
 .feature.covid p {
   text-align: right;
   font-size: 18px;
+  font-family: 'Nunito',sans-serif;;
   
+}
+#covidslogan {
+  font-size: 70px;
+  font-weight: 500;
 }
 
 .feature_strip {
@@ -381,12 +401,14 @@ ul.normal {
 }
 
 .feature_strip h1 {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'Oswald',sans-serif;
+
 }
 
 .feature_strip p {
-  max-width: 600px;
+  max-width: 800px;
   text-align: center;
   display: block;
   margin-top: 20px;
@@ -396,35 +418,46 @@ ul.normal {
 
 
 .covid-columns {
-  margin-top: 20px;
+  margin-top: 120px;
   margin-bottom: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
 
 }
 .covid-left h2 {
-  font-size: 28px;
-font-weight: bold;
+  font-size: 36px;
+font-weight: 500;
 color: #000;
 font-family: 'Oswald',sans-serif;
 text-transform: uppercase;
-line-height: 1.1em;
+line-height: 80%;
+word-wrap: break-word;
+margin-bottom: 20px;
+}
+.covid-left h3 {
+  font-size: 28px;
+font-weight: 500;
+color: #000;
+font-family: 'Oswald',sans-serif;
+text-transform: uppercase;
+line-height: 80%;
 word-wrap: break-word;
 margin-bottom: 20px;
 }
 
 .covid-left p {
   font-size: 16px;
-  color: #000;
+  color:#696969;
   font-family: 'Nunito',sans-serif;
   line-height: 1.1em;
   display: block;
   margin-bottom: 20px;
+  margin-right: 50px;
 }
 
 .covid-left p.large {
   font-size: 18px;
   font-weight: bold;
-  color: #000;
+  color: #696969;
   font-family: 'Nunito',sans-serif;
   line-height: 1.1em;
   display: block;
@@ -432,14 +465,16 @@ margin-bottom: 20px;
 }
 
 .covid-right {
-   padding-left: 50px;
-}
-#covid-subscribe-form {
-  
+   padding-left: 0px;
 }
 
+#covid-subscribe-form{
+
+}
+
+
 #covid-subscribe-form input {
-  border: 2px solid #000;
+  border: 2px solid #696969;
   padding: 5px;
   font-size: 15px;
   font-weight: bold;
@@ -454,10 +489,14 @@ appearance: none;
 display: block;
 min-width: 300px;
 margin-bottom: 10px;
+font-family: 'Nunito',sans-serif;
+margin-left: 50px;
+
 }
 
+
 #covid-subscribe-form textarea {
-  border: 2px solid #000;
+  border: 2px solid #696969;
   padding: 5px;
   font-size: 15px;
   font-weight: bold;
@@ -472,6 +511,8 @@ appearance: none;
 display: block;
 min-width: 300px;
 margin-bottom: 10px;
+font-family: 'Nunito',sans-serif;
+margin-left: 50px;
 }
 
 
