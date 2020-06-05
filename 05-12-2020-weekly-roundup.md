@@ -1,0 +1,87 @@
+Title: Weekly AI Ethics News Roundup: May 5 - May 12
+SubTitle: May 5 - May 12
+Date: 2020-05-12 09:20
+Modified: 2020-05-12 09:20
+Category: news
+Tags: roundup
+Slug: ai-ethics-news-roundup-may5-may12-2020
+Authors: EI-Team
+Template: roundup
+Summary: @johnchavens @nextvisions happiness & AI @ruha9 & @RadicalAIPod race & AU @rebheilweil AI background checks @mathbabedotorg FEMA's COVID-19 model @IEEESpectrum AI & COVID-19 @hackylawyER blockchain & immunity passports @strwbilly covid-19 changes behaviour, confuses ML models
+
+
+Welcome to the EI weekly round-up; a curation of quality posts to help you cut through the noise and get right to the heart of the discussion on AI and Tech Ethics.
+
+Every Tuesday we publish a list of links to articles and debates that have happened over the past week in the community, allowing you to stay as up-to-date as possible on developments and facts. We will often link to arguments from all sides of the debate, even if the opinions may be controversial. We would like to mention, however, that EI does not endorse any of the information published, all links are reflections of the author's opinions and not that of Ethical Intelligence.
+
+
+
+## A Metric Learning Reality Check
+
+"Deep metric learning papers from the past four years have consistently claimed great advances in accuracy, often more than dou-bling the performance of decade-old methods. In this paper, we take a closer look at the field to see if this is actually true. We find flaws in the experimental setup of these papers, and propose a new way to evaluate metric learning algorithms. Finally, we present experimental results that show that the improvements over time have been marginal at best."
+
+<a class="readmore" href="https://arxiv.org/pdf/2003.08505.pdf">Read More</a>
+
+
+
+## About positive psychology and ethics in AI
+
+"In the third episode of the Next Visions Podcast, the Creative Director Florian Schmitt and John C. Havens, Director of the Global Initiative on Ethics of autonomous and intelligent systems, meet in the Academia das Ciências in Lisbon’s Old Town to talk about happiness and its interface with technology."
+
+<a class="readmore" href="https://medium.com/next-level-german-engineering/next-visions-podcast-florian-schmitt-john-havens-b45b45a12a5b">Read More</a>
+
+## Love, Challenge, and Hope: Building a Movement to Dismantle the New Jim Code with Ruha Benjamin
+
+"How is racism embedded in technological systems? How do we address the root causes of discrimination? How do we as designers and consumers of AI technology reclaim our agency and create a world of equity for all? To answer these questions and more The Radical AI Podcast welcomes Dr. Ruha Benjamin to the show.  Dr. Benjamin is Associate Professor of African American Studies at Princeton University and founder of the Just Data Lab. She is author of People’s Science: Bodies and Rights on the Stem Cell Frontier (2013) and Race After Technology: Abolitionist Tools for the New Jim Code (2019) among other publications. Her work investigates the social dimensions of science, medicine, and technology with a focus on the relationship between innovation and inequity, health and justice, knowledge, and power.Full show notes for this episode can be found at Radicalai.orgIf you enjoy this episode please make sure to subscribe, submit a rating and review, and connect with us on twitter at twitter.com/radicalaipod"
+
+<a class="readmore" href="https://podcasts.apple.com/us/podcast/love-challenge-hope-building-movement-to-dismantle/id1505229145?i=1000473742475">Read More</a>
+
+## Beware of these futuristic background checks
+
+"Tons of people are looking for work. AI-powered background checks could stand in the way."
+
+"But experts have expressed skepticism about the role that AI can actually play in hiring. The technology doesn’t always work and can exacerbate bias and privacy problems. Inevitably, it also raises bigger questions of how powerful AI should become."
+
+<a class="readmore" href="https://www.vox.com/recode/2020/5/11/21166291/artificial-intelligence-ai-background-check-checkr-fama">Read More</a>
+
+## A Secret Algorithm Is Deciding Who Will Die in America
+
+"In my book, “Weapons of Math Destruction,” I identified three properties that make a predictive algorithm particularly dangerous: It must be important, secret and destructive. FEMA’s new model has them all. If it can persuade a governor to lift stay-at-home orders in the middle of a pandemic, it’s important. As of this writing, its details remain a secret. And while what will happen in Arizona remains to be seen, it has the potential to destroy many lives by justifying bad decisions."
+
+<a class="readmore" href="https://www.bloomberg.com/opinion/articles/2020-05-07/coronavirus-don-t-let-a-secret-algorithm-decide-who-will-die">Read More</a>
+
+## CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems
+
+The ACM CHI Conference on Human Factors in Computing Systems 2020 edition (#CHI2020) didn't take place this year, but the proceedings contain a wealth of new papers, all open access. 
+
+[CHI 2021](https://chi2021.acm.org/) will be May 8-13, 2021 in Yokohama, Japan. 
+
+<a class="readmore" href="https://dl.acm.org/doi/proceedings/10.1145/3313831#issue-downloads">Read More</a>
+
+## Statement Regarding the Ethical Implementation of Artificial Intelligence Systems (AIS) for Addressing the COVID-19 Pandemic
+
+"Digital technologies including Artificial Intelligence Systems (AIS)1 can play an important and beneficial role in addressing the COVID-19 crisis. They can help model infection dynamics and socio-economic impact, monitor physical distancing, identify vaccines and help fight disease spread. However, these same technologies can also increase surveillance of individuals and populations and undermine fundamental human values such as privacy and human agency. As we lean on AIS technology, it is therefore important to carefully navigate the possible tension between basic ethical principles and fundamental rights and values developed in non-crisis times with the need to address major public health and individual safety issues in this crisis.  "
+
+<a class="readmore" href="https://spectrum.ieee.org/the-institute/ieee-news/statement-regarding-the-ethical-implementation-of-artificial-intelligence-systems-ais-for-addressing-the-covid19-pandemic#.XrXYiLrc1Ws.twitter">Read More</a>
+
+
+## Our weird behavior during the pandemic is messing with AI models
+
+"Machine-learning models trained on normal behavior are showing cracks —forcing humans to step in to set them straight."
+
+<a class="readmore" href="https://www.technologyreview.com/2020/05/11/1001563/covid-pandemic-broken-ai-machine-learning-amazon-retail-fraud-humans-in-the-loop/">Read More</a>
+
+## TLDR on why blockchain-enabled immunity passports, certificates, or credentials for #COVID19
+
+A great twitter thread from @hackylawyER (Elizabeth M. Renieris) on blockchain and immunity passports. 
+
+<a class="readmore" href="https://twitter.com/hackylawyER/status/1258103375004131329">Read More</a>
+
+## Oppressive Things
+
+Not directly about AI, but a provocative way to think about biases in ML and AI. 
+
+"In analyzing oppressive systems like racism, social theorists have articulated accounts of the dynamic interaction and mutual dependence between psychological components, such as individuals’ patterns of thought and action, and social components, such as formal institutions and informal interactions. We argue for the further inclusion of physical components, such as material artifacts and spatial environments. Drawing on socially situated and ecologically embedded approaches in the cognitive sciences, we argue that physical components of racism are not only shaped by, but also shape psychological and social components of racism. Indeed, while our initial focus is on racism and racist things, we contend that our framework is also applicable to other oppressive systems, including sexism, classism, and ableism. This is because racist things are part of a broader class of oppressive things, which are material artifacts and spatial environments that are in congruence with an oppressive system."
+
+<a class="readmore" href="https://philpapers.org/rec/LIAOT">Read More</a>
+
