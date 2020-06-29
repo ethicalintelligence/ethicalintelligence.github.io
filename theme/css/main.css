@@ -953,6 +953,11 @@ appearance: none;
   line-height: 1.1em;
 }
 
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
 .post-body h1.blog-item-heading-roundup {
   text-align: center;
 }
