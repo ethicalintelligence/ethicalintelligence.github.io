@@ -654,14 +654,14 @@ html body a.readmore {
 
 .entry-content h2,.entry-content h2 a {
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
   color: #000;
-  font-family: 'oswald-extralight',oswald,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
   line-height: 1.1em;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .entry-content h2 a {
