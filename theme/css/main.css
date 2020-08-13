@@ -935,6 +935,8 @@ appearance: none;
 .post-body h1 {
   margin-bottom: 40px;
 }
+
+
 .post-body h1 a {
   font-size: 28px;
   font-weight: bold;
@@ -957,6 +959,7 @@ img.center {
   display: block;
   margin: 0 auto;
 }
+
 
 .post-body h1.blog-item-heading-roundup {
   text-align: center;
@@ -986,6 +989,11 @@ img.center {
   margin: 0 !important;
 }
 
+
+blockquote p{
+  background: #eb0707;
+
+}
 
 
 /* Footer ****************************************************/
